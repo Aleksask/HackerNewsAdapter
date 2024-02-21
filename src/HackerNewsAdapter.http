@@ -1,0 +1,17 @@
+@HackerNewsAdapter_HostAddress = https://localhost:7095
+
+GET {{HackerNewsAdapter_HostAddress}}/api/best/
+Accept: application/json
+
+###
+GET {{HackerNewsAdapter_HostAddress}}/api/best?n=5
+Accept: application/json
+
+###
+GET https://hacker-news.firebaseio.com/v0/beststories.json
+Accept: application/json
+
+###
+GET https://hacker-news.firebaseio.com/v0/item/39429370.json
+Accept: application/json
+
