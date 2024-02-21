@@ -13,10 +13,12 @@ To improve the performance of the cold load (when there are no articles in memor
 
 ## Solution structure
 
-/src
-    /Api - contains the REST api endpoint for the hackernews api adapter
-    /Client - contains hackernews api endpoint definitions
-    /Models - contains the models for hackernews Api and the hackernews api adapter, together with a mapper config 
+/src/Api - contains the REST api endpoint for the hackernews api adapter
+
+/src/Client - contains hackernews api endpoint definitions
+
+/src/Models - contains the models for hackernews Api and the hackernews api adapter, together with a mapper config
+
 /tests - contains tests for the interaction with the hackernews api  
 
 
