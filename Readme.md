@@ -9,7 +9,15 @@ Since only vanilla HTTP GET requests were needed Refit library was chosen to abs
 
 To protect overloading of the hacker news api concurrent rate limiter middleware was added and configured to take only 10 concurrent user requests (can be modified). 
 To further the load reduction on the hackernews api in memory cache had been added so the items which had been downloaded wouldn't be repeatedly downloaded.
-To improve the performance of the cold load (when there are no articles in memory cache) article details are downloaded in parallel. 
+To improve the performance of the cold load (when there are no articles in memory cache) article details are downloaded in parallel.
+
+## Solution structure
+
+/src
+    /Api - contains the REST api endpoint for the hackernews api adapter
+    /Client - contains hackernews api endpoint definitions
+    /Models - contains the models for hackernews Api and the hackernews api adapter, together with a mapper config 
+/tests - contains tests for the interaction with the hackernews api  
 
 
 ## Usage
